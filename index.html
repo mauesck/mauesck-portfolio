@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Minha trajetória na tecnologia, competências, projetos e contato">
+    <meta property="og:title" content="Mauesck | Desenvolvedor Web">
+    <meta property="og:description" content="Minha trajetória na tecnologia, competências, projetos e contato">
+    <meta property="og:image" content="imgs/icon.png">
+    <link rel="apple-touch-icon" href="imgs/icon.png" />
+    <link rel="shortcut icon" href="imgs/icon.png">
+    <link rel="icon" type="image/x-icon" href="imgs/icon.ico">
+    <title>Mauesck | Sobre mim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Honk&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="myname" href="index.html">Thiago Mauesck</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" id="suspenso">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sobre mim
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#trajetoria">Trajetória</a></li>
+                                <li><a class="dropdown-item" href="#competencias">Competências</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projetos.html">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <div class="bloco div-direita">
+                <h2 id="titulo-intro"></h2>
+                <div id="intro-texto">
+                    <img src="imgs/3.png" alt="Desenvolvedor Web Full Stack Thiago Mauesck">
+                    <p id="texto-intro">Eu me chamo Thiago, nesta página falo um pouco sobre quem sou, sobre a
+                        minha trajetória na tecnologia, e também disponibilizo alguns projetos para comprovar as minhas
+                        competências na área. <br><br> É um prazer recebê-lo aqui, fique a vontade para me conhecer
+                        mais!</p>
+                </div>
+            </div>
+        </section>
+        <section id="trajetoria">
+            <h1>Minha Trajetória</h1>
+            <div id="div-circulos">
+                <div class="circulo" onclick="trajetoria(this,2015)">
+                    <p>2015</p>
+                </div>
+                <hr>
+                <div class="circulo" onclick="trajetoria(this,2018)">
+                    <p>2018</p>
+                </div>
+                <hr>
+                <div class="circulo" onclick="trajetoria(this,2019)">
+                    <p>2019</p>
+                </div>
+                <hr>
+                <div class="circulo" onclick="trajetoria(this,2022)">
+                    <p>2022</p>
+                </div>
+                <hr>
+                <div class="circulo" onclick="trajetoria(this,2023)">
+                    <p>2023</p>
+                </div>
+                <hr>
+                <div class="circulo" onclick="trajetoria(this,2024)">
+                    <p>2024</p>
+                </div>
+            </div>
+            <div class="div-trajetoria">
+                <p class="trajetoria-texto" id="2015">
+                    Tudo começou em 2015, ano o qual eu coloquei não o pé, mas posso dizer que um fio de cabelo, na área
+                    de tecnologia, mais especificamente na programação. Estava eu como de costume navegando atoa na
+                    internet, quando me veio a seguinte dúvida: "Como tudo isso é feito?". E então curioso como sou fui
+                    pesquisar. Pesquisei: "Como construir um site". Do google fui direcionado para uma video aula no
+                    youtube onde o gênio (como eu via quem fazia isso na época), mostrava a como construir um navbar com
+                    html e css. Fiquei maravilhado, pesquisei alguns cursos e resolvi iniciar um curso gratuito da Prime
+                    Cursos, porêm não passou do "iniciar", pois com 15 anos eu não tinha tanta paciência para o
+                    aprendizado 🥱.
+                </p>
+                <p class="trajetoria-texto" id="2018">
+                    Em 2018 mudei de função na primeira empresa a qual comecei a trabalhar como
+                    jovem
+                    aprendiz, a Rôgga Empreendimentos, do setor de incorporação fui recolodado para uma área com uma
+                    maior demanda de serviço, a infraestrutura de T.I 🥴. Este estava sendo um serviço mais têcnico que
+                    me interessava muito, mechia muito com prompt para executar algumas tarefas e isso me agradava.
+                </p>
+                <p class="trajetoria-texto" id="2019">
+                    Foi
+                    então que em 2019 ainda na Rôgga Empreendimentos decidi começar o Técnico em Desenvolvimento de
+                    Sistemas no Senai Norte Joinville, o curso ia da Lógica com VisualG ao Desenvolvimento Completo de
+                    um Sistema em uma pegada mais breve e rápida. Estava indo tudo bem, aprendi muito a mecher com banco
+                    de dados, a cosntruir tabelas, e mais tarde a utilizar em conexão a um projeto desenvolvido em Java
+                    com o NetBeans, mas ai, a pandemia aconteceu 😷. As aulas foram para o EAD, e eu perdi o gás.
+                    Finalizei o Técnico daquele jeito... E então acabei deixando de lado a programação por um tempo.
+                </p>
+                <p class="trajetoria-texto" id="2022">
+                    Eis que em 2022 eu voltei com tudo! 🚀 Me matriculei no Superior de Análise e
+                    Desenvolvimento de Sistemas do Senai Norte Joinville, agora UniSENAI Campus Jonville, e iniciei
+                    novamente a jornada inteira do começo. Relembrei sobre lógica de programação com o VisualG,
+                    relembrei
+                    e adquiri novos conhecimento em Java, também aprendi a trabalhar com o Eclipse IDE. Estava indo tudo
+                    bem, porém novamente, a vida aconteceu... Precisei fazer uma cirurgia de LCA devido a uma lesão
+                    jogando
+                    futebol, e precisei de 3 meses afastado de todas as atividades para me recuperar. Voltei 3 meses
+                    depois e finalizei o ano um pouco atrasado aprendendo sobre orientação a objetos com Java.
+                </p>
+                <p class="trajetoria-texto" id="2023">
+                    Em 2023, ainda no começo do semestre finalizei meu aprendizado em Orientação a Objetos com
+                    êxito, e
+                    uma bela compreensão do assunto, encapsulamento, herança e por ai vai... Comecei então a trilha de
+                    desenvolvimento Front-End com HTML, CSS e JavaScript. Levei meu conhecimento com essas tecnologias
+                    ao nível de excelência, construindo páginas com ótima Acessibilidade, Flexibilidade e
+                    Responsividade.
+                    Comecei então a aprender Back-End com Node.js e finalizei o ano concluíndo a trilha sobre o mesmo,
+                    que ia até um CRUD completo, porém ainda sem a conexão a um Database.
+                </p>
+                <p class="trajetoria-texto" id="2024">
+                    Agora em 2024, mais forte do que nunca, iniciei o ano desenvolendo um pequeno projeto
+                    Front-End que consiste apenas em um bloco de notas. Neste ano aprofundei meus conhecimentos em
+                    Node.js, reaprendi MySQL, e estou a todo vapor trabalhando em projetos pessoais Full-Stack em meus
+                    momentos de lazer, além do projeto consolidado que está em desenvolvimento, um projeto em grupo que
+                    consiste em no desenvolvimento de uma plataforma web para adicionar e buscar vagas de emprego com um
+                    diferêncial das
+                    outras plataformas, que será o feedback obrigatório por parte das empresas para com os candidatos.
+                </p>
+            </div>
+        </section>
+        <section id="competencias">
+            <h1>Minhas Comptências</h1>
+            <div class="bloco">
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/competencias/5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML5</h5>
+                        <p class="card-text">Nível: Avançado ⭐⭐⭐</p>
+                        <p class="card-text">Imersão: 05/2023</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/competencias/6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                        <p class="card-text">Nível: Avançado ⭐⭐⭐</p>
+                        <p class="card-text">Imersão: 05/2023</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/competencias/7.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <p class="card-text">Nível: Avançado ⭐⭐⭐</p>
+                        <p class="card-text">Imersão: 05/2023</p>
+
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/competencias/8.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                        <p class="card-text">Nível: Intermediário ⭐⭐</p>
+                        <p class="card-text">Imersão: 04/2024</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/competencias/9.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">VUE.js</h5>
+                        <p class="card-text">Nível: Báscio ⭐</p>
+                        <p class="card-text">Imersão: 04/2024</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/competencias/10.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Git</h5>
+                        <p class="card-text">Nível: Avançado ⭐⭐⭐</p>
+                        <p class="card-text">Imersão: 04/2023</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/competencias/11.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Node.js</h5>
+                        <p class="card-text">Nível: Intermediário ⭐⭐</p>
+                        <p class="card-text">Imersão: 06/2023</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/competencias/12.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">JAVA</h5>
+                        <p class="card-text">Nível: Intermediário ⭐⭐</p>
+                        <p class="card-text">Imersão: 2019</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/competencias/13.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MySQL</h5>
+                        <p class="card-text">Nível: Intermediário ⭐⭐</p>
+                        <p class="card-text">Imersão: 2019</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/competencias/14.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Scripts - Google Sheets</h5>
+                        <p class="card-text">Nível: Avançado ⭐⭐⭐</p>
+                        <p class="card-text">Imersão: 2021</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/competencias/15.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Arquitetura MVC</h5>
+                        <p class="card-text">Nível: Intermediário ⭐⭐</p>
+                        <p class="card-text">Imersão: 2022</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/competencias/16.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Infra em VPS</h5>
+                        <p class="card-text">Nível: Intermediário ⭐⭐</p>
+                        <p class="card-text">Imersão: 2023</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/competencias/17.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SEO</h5>
+                        <p class="card-text">Nível: Avançado ⭐⭐⭐</p>
+                        <p class="card-text">Imersão: 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <div id="footer-logo">
+                    <h3>Thiago Mauesck</h3>
+                    <h4>Desenvolvedor Web <img src="imgs/icon.png" alt="icon thiago mauesck dev web"></h4>
+                </div>
+                <div>
+                    <h3>Informações</h3>
+                    <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=5547992212596&text=Ol%C3%A1,%20vi%20seu%20portf%C3%B3lio,%20gostaria%20de%20contratar%20seu%20servi%C3%A7o."><ion-icon
+                            name="logo-whatsapp"></ion-icon>(47) 99221-2596</a>
+                    <p><ion-icon name="mail-outline"></ion-icon>mauesckt@gmail.com</p>
+                    <p><ion-icon name="location-outline"></ion-icon>Joinville, Santa Catarina, Brasil</p>
+                </div>
+                <form target="_blank" action="https://formspree.io/f/mwkglkog" method="POST"
+                    onsubmit="return validaFormulario()">
+                    <h3 id="contato">Contato</h3>
+                    <input type="text" name="nome" id="fale-nome" placeholder="Nome Completo:">
+                    <input type="email" name="email" id="fale-email" placeholder="E-mail:">
+                    <input type="tel" name="telefone" id="fale-telefone" placeholder="Telefone:">
+                    <textarea id="mensagem" name="mensagem" placeholder="Oque você deseja falar?" rows="4"
+                        required></textarea>
+                    <div>
+                        <button id="bt-confirma" type="submit">Enviar</button>
+                        <button id="bt-limpa" type="reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+            <div id="sub-footer">
+                <div>
+                    &copy; 2024 Thiago Mauesck - Todos os direitos reservados.
+                </div>
+                <div id="sociais">
+                    <a target="_blank" href="https://www.instagram.com/mauesk"><ion-icon
+                            name="logo-instagram"></ion-icon></a>
+                    <a target="_blank" href="https://br.linkedin.com/in/thiago-mauesck-lima"><ion-icon
+                            name="logo-linkedin"></ion-icon></a>
+                    <a target="_blank" href="https://github.com/mauesck"><ion-icon name="logo-github"></ion-icon></a>
+                    <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=5547992212596&text=Ol%C3%A1,%20vi%20seu%20portf%C3%B3lio,%20gostaria%20de%20contratar%20seu%20servi%C3%A7o."><ion-icon
+                            name="logo-whatsapp"></ion-icon></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
