@@ -318,26 +318,28 @@ section {
 }
 
 .projetos h4{
-    margin: 5px;
     text-decoration-line: underline;
+    margin: 10px;
 }
 
 #front .bloco,
 #back .bloco{
+    text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin: 10px;
-    padding: 10px;
-    width: 30%;
+    width: 300px;
     background-color: #35495E;
     color: white;
-    text-align: center;
 }
 
 .caracteristicas{
     background-color: #617b97;
+    width: 100%;
+}
+
+.projetos p{
+    margin: 10px;
 }
 
 .projetos a{
