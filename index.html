@@ -40,8 +40,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" id="suspenso">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link active dropdown-toggle" href="index.html" role="button" aria-expanded="false">
                                 Sobre mim
                             </a>
                             <ul class="dropdown-menu">
@@ -49,8 +48,14 @@
                                 <li><a class="dropdown-item" href="#competencias">Competências</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projetos.html">Projetos</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="projetos.html" role="button" aria-expanded="false">
+                                Projetos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="projetos.html#front">Front-End</a></li>
+                                <li><a class="dropdown-item" href="projetos.html#back">Back-End</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contato">Contato</a>
@@ -275,23 +280,26 @@
                 <div id="footer-logo">
                     <h3>Thiago Mauesck</h3>
                     <h4>Desenvolvedor Web <img src="imgs/icon.png" alt="icon thiago mauesck dev web"></h4>
-                </div>
-                <div>
-                    <h3>Informações</h3>
-                    <a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=5547992212596&text=Ol%C3%A1,%20vi%20seu%20portf%C3%B3lio,%20gostaria%20de%20contratar%20seu%20servi%C3%A7o."><ion-icon
-                            name="logo-whatsapp"></ion-icon>(47) 99221-2596</a>
-                    <p><ion-icon name="mail-outline"></ion-icon>mauesckt@gmail.com</p>
-                    <p><ion-icon name="location-outline"></ion-icon>Joinville, Santa Catarina, Brasil</p>
+                    <div>
+                        <a target="_blank"
+                            href="https://api.whatsapp.com/send?phone=5547992212596&text=Ol%C3%A1,%20vi%20seu%20portf%C3%B3lio,%20gostaria%20de%20contratar%20seu%20servi%C3%A7o."><ion-icon
+                                name="logo-whatsapp"></ion-icon>(47) 99221-2596</a>
+                        <p><ion-icon name="mail-outline"></ion-icon>mauesckt@gmail.com</p>
+                        <p><ion-icon name="location-outline"></ion-icon>Joinville, Santa Catarina, Brasil</p>
+                    </div>
                 </div>
                 <form target="_blank" action="https://formspree.io/f/mwkglkog" method="POST"
                     onsubmit="return validaFormulario()">
-                    <h3 id="contato">Contato</h3>
-                    <input type="text" name="nome" id="fale-nome" placeholder="Nome Completo:">
-                    <input type="email" name="email" id="fale-email" placeholder="E-mail:">
-                    <input type="tel" name="telefone" id="fale-telefone" placeholder="Telefone:">
-                    <textarea id="mensagem" name="mensagem" placeholder="Oque você deseja falar?" rows="4"
-                        required></textarea>
+                    <h3 id="contato">Contate-me aqui</h3>
+                    <div>
+                        <input type="text" name="nome" id="fale-nome" placeholder="Nome:">
+                        <input type="email" name="email" id="fale-email" placeholder="E-mail:">
+                        <input type="tel" name="telefone" id="fale-telefone" placeholder="Telefone:">
+                    </div>
+                    <div>
+                        <textarea id="mensagem" name="mensagem" placeholder="Oque você deseja falar?" rows="4"
+                            required></textarea>
+                    </div>
                     <div>
                         <button id="bt-confirma" type="submit">Enviar</button>
                         <button id="bt-limpa" type="reset">Limpar</button>

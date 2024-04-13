@@ -67,7 +67,7 @@ function trajetoria(element, ano) {
         document.querySelector('.div-trajetoria').style.width = '80%';
         document.querySelector('.div-trajetoria').style.height = '200px';
     } else {
-        document.querySelector('.div-trajetoria').style.height = '570px';
+        document.querySelector('.div-trajetoria').style.height = '650px';
         document.querySelector('.div-trajetoria').style.justifyContent = 'start';
     }
 
@@ -121,3 +121,18 @@ function validaFormulario() {
     // Se todas as validações passarem, o formulário será enviado
     return true;
 }
+
+// ----- formata input 
+const inputTelefone = document.getElementById('fale-telefone');
+
+// Adiciona um listener para o evento 'input' no input de telefone
+inputTelefone.addEventListener('input', function (e) {
+    // Remove todos os caracteres não numéricos do valor do input
+    let numeroLimpo = inputTelefone.value.replace(/\D/g, '');
+
+    // Formata o número de acordo com o padrão (###) #####-####
+    let numeroFormatado = '(' + numeroLimpo.substring(0, 2) + ') ' + numeroLimpo.substring(2, 7) + '-' + numeroLimpo.substring(7, 11);
+
+    // Atualiza o valor do input com o número formatado
+    inputTelefone.value = numeroFormatado;
+});

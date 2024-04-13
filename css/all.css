@@ -1,9 +1,6 @@
 * {
     /*border: 1px solid red;
     /**/
-}
-
-.html {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -20,7 +17,7 @@ header {
 }
 
 nav {
-    box-shadow: 0 2px 2px #d8d8d8;
+    box-shadow: 0 2px 2px #333;
     min-height: 50px;
 }
 
@@ -294,7 +291,7 @@ section {
 }
 
 .card:hover {
-    background-color: #333;
+    background-color: #35495E;
     color: white;
 }
 
@@ -302,16 +299,81 @@ section {
     width: 100px;
 }
 
+/* frontend */
+#front,
+#back{
+    padding-top: 100px;
+}
+
+.projetos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+}
+
+.projetos h4{
+    margin: 5px;
+    text-decoration-line: underline;
+}
+
+#front .bloco,
+#back .bloco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    background-color: #35495E;
+    color: white;
+    text-align: center;
+}
+
+.caracteristicas{
+    background-color: #617b97;
+}
+
+.projetos a{
+    text-align: center;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.projetos a:hover{
+    background-color: #283747;
+}
+
+
+
+
 /* footer */
+
 footer {
     position: relative;
-    background-color: #35495E;
+    background-color: #35495ee7;
     display: flex;
     flex-direction: column;
     color: white;
 }
 
+#footer-logo{
+    display: flex;
+}
+
+#footer-logo div{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+}
 #footer-logo h3 {
+    font-style: italic;
     display: flex;
     flex-direction: row;
     border: none;
@@ -323,6 +385,9 @@ footer {
     flex-direction: row;
     align-items: center;
     border: none;
+    font-size: 25px;
+    margin-left: 50px;
+    font-style: italic;
 }
 
 #footer-logo h4 img {
@@ -332,21 +397,11 @@ footer {
     margin-left: 10px;
 }
 
-footer h4 {
-    font-style: italic;
-    margin-left: 50px;
-    border-bottom: 1px solid;
-}
-
-footer h3 {
-    font-style: italic;
-    border-bottom: 1px solid;
-}
 
 footer div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 footer p,
@@ -374,12 +429,7 @@ footer div div {
     gap: 0;
 }
 
-footer div div h3,
-footer div form h3 {
-    margin-left: 0 !important;
-}
-
-footer div form {
+footer form {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -387,42 +437,51 @@ footer div form {
     margin: 20px;
 }
 
+form div {
+    margin: 0 !important;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+    width: 100%;
+}
+
 form input,
 form textarea,
 form button {
     padding: 5px;
-    margin: 5px;
-    margin-right: 0;
-    margin-left: 0;
-    min-width: 300px;
-    border: 1px solid rgb(179, 179, 179);
+    margin: 0 5px 5px 0px;
+    min-width: 200px;
+    border: none;
+    background-color: white;
+    outline: none;
     border-radius: 0;
 }
 
+form textarea{
+    width: 100%;
+}
+
 #bt-confirma {
-    background-color: #00a2ff;
+    background-color: #023163;
     color: white;
     font-size: 17px;
     font-weight: bold;
 }
 
 #bt-confirma:hover {
-    background-color: #0095eb;
+    background-color: #003874;
 }
 
 #bt-limpa {
     background-color: #fff;
-    color: black;
+    color: #333;
     font-size: 17px;
 }
 
 #bt-limpa:hover {
     background-color: #eeeeee;
-}
-
-form div {
-    margin: 0 !important;
-    padding: 0;
 }
 
 #sub-footer {
@@ -472,14 +531,8 @@ form div {
         border: none;
     }
 
-    form {
-        width: 100%;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-
-    form div {
-        width: 100%;
+    form{
+        width: 100% !important;
         justify-content: center !important;
         align-items: center !important;
     }
@@ -489,6 +542,7 @@ form div {
     form button {
         padding: 5px;
         margin: 5px;
+        width: 100%;
     }
 
     #sub-footer {
