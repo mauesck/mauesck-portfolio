@@ -3,12 +3,12 @@ https://mauesck.github.io/mauesck-portfolio/index.html
 
 #
 
-### Instruções
+### Instruções:
 
 Abra o arquivo index.html
 
 #
 
-### Tecnologia
+### Tecnologia:
 
 Utilizado Html, Css, JavaScript e Bootstrap
