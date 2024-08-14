@@ -106,10 +106,10 @@ function validaFormulario() {
     // Validação do campo Telefone (opcional, apenas números)
     var telefone = document.getElementById('fale-telefone').value;
     var telefoneRegex = /^\d*$/;
-    if (telefone.trim() !== '' && !telefoneRegex.test(telefone)) {
-        alert('Por favor, insira apenas números no campo Telefone.');
-        return false;
-    }
+    // if (telefone.trim() !== '' && !telefoneRegex.test(telefone)) {
+    //     alert('Por favor, insira apenas números no campo Telefone.');
+    //     return false;
+    // }
 
     // Validação do campo Mensagem
     var mensagem = document.getElementById('mensagem').value;
